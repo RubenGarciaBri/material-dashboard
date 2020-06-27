@@ -1,0 +1,211 @@
+
+.sidebar {
+  background-color: var(--sidebar-bg);
+  overflow: hidden;
+  position: fixed;
+  width: 28rem;
+  height: 100vh;
+  box-shadow: 8px 0 10px -6px rgba(0, 0, 0, 0.2);
+  
+
+
+  &__list {
+
+    &-heading {
+      font-size: 1.4rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding: 1.3rem 2.5rem;
+      color: var(--sidebar-heading);
+    }
+
+    &-item {
+      position: relative;
+
+      & a {
+        display: block;
+        position: relative;
+        padding: 1.3rem 2.5rem;
+        font-size: 1.4rem;
+        color: var(--sidebar-list-item);
+        font-weight: 500;
+        background: var(--sidebar-list-item-bg);
+        border-left: solid 4px var(--sidebar-list-item-bg);
+        transition: .2s;
+        
+
+        &:hover {
+          background: var(--sidebar-list-item-alt);
+          border-left: solid 4px var(--sidebar-list-item-alt);
+        }
+
+        & i {
+          margin-right: 20px;
+          font-size: 1.8rem;
+          color: var(--sidebar-list-item);
+        }
+      }
+
+      &__badge {
+        color: $color-white;
+        background: $color-accent-green;
+        position: absolute;
+        top: 50%;
+        right: 2.5rem;
+        transform: translateY(-50%);
+        display: inline-block;
+        font-size: 1.1rem;
+        padding: 0.1rem .8rem;
+        border-radius: .3rem;
+      }
+
+      &--pro {
+
+        & a {
+          background: linear-gradient(to right, $color-primary, $color-secondary);
+          display: inline-block;
+          padding: 1.5rem 3.5rem;
+          margin-left: 2.5rem;
+          border-radius: 25rem;
+          margin-top: 2.5rem;
+          color: $color-white;
+          border: none;
+          transition: .2s;
+
+          & i {
+            color: #fff;
+          }
+
+          &:hover {
+            background: linear-gradient(to right, darken($color-primary, 7%), darken($color-secondary, 7%));
+            border: none;
+          }
+
+        }
+      }
+    }
+
+    &-item--active a {
+      background: var(--sidebar-list-item-alt);
+      border-left: solid 4px var(--sidebar-list-item-border);
+
+      &:hover {
+        border-left: solid 4px var(--sidebar-list-item-border);
+      }
+    }
+
+    
+  }
+
+  &__top {
+
+    &-heading {}
+
+
+    &-wrapper {
+      padding: 17px 25px;
+      border-bottom: 2px solid var(--sidebar-border);
+    }
+
+  }
+
+  // Individual Sidebar Sections
+
+  &__middle {}
+
+  &__bottom {
+
+
+    &-heading {
+      @extend .sidebar__list-heading;
+    }
+
+    &-subheading {
+      font-size: 1.4rem;
+      font-weight: 400;
+      display: inline-block;
+      padding: 0 2.5rem .5rem 2.5rem;
+      color: var(--sidebar-subheading);
+    }
+
+    &-gradientList {
+      display: flex;
+      padding: 0 0 1.5rem 2.5rem;
+
+      &__item {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: inline-block;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:not(:last-child) {
+          margin-right: 1.2rem;
+        }
+
+        &--1 {
+          background-image: linear-gradient(to right, $color-alt-1-primary, $color-alt-1-secondary);
+        }
+
+        &--2 {
+          background-image: linear-gradient(to right, $color-alt-2-primary, $color-alt-2-secondary);
+        }
+
+        &--3 {
+          background-image: linear-gradient(to right, $color-alt-3-primary, $color-alt-3-secondary);
+        }
+
+        &--4 {
+          background-image: linear-gradient(to right, $color-alt-4-primary, $color-alt-4-secondary);
+        }
+
+        &--5 {
+          background-image: linear-gradient(to right, $color-alt-5-primary, $color-alt-5-secondary);
+        }
+
+        &--6 {
+          background-image: linear-gradient(to right, $color-alt-6-primary, $color-alt-6-secondary);
+        }
+      }
+    }
+
+    &-inputWrapper {
+      padding-left: 2.5rem;
+    }
+
+    &-input {
+      position: relative;
+      width: 4rem;
+      height: 2rem;
+      -webkit-appearance: none;
+      background: #c6c6c6;
+      border-radius: 2rem;
+      transition: .3s;
+      outline: none;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+
+      &:checked {
+        background-color: #03a9f4;
+
+        &:before {
+          left: 2rem;
+        }
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 2rem;
+        background: #fff;
+        transform: scale(1.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        transition: .3s;
+      }
+    }
+  }
+}

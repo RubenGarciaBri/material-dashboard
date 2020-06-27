@@ -1,0 +1,21 @@
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/faq';
+@import 'components/modal';
+@import 'components/card';
+@import 'components/floating-btn';
+
+@import 'layout/main-grid';
+@import 'layout/dashboard';
+@import 'layout/sidebar';
+@import 'layout/footer';
+
+@import 'pages/inbox';
+@import 'pages/knowledge';
+@import 'pages/support';
+@import 'pages/home';

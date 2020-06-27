@@ -1,0 +1,41 @@
+.faqAccordion {
+  text-align: left;
+  
+  .faqAccordion-tab {
+    margin-bottom: 2rem;
+  }
+
+  &__btn {
+    display: block;
+    width: 100%;
+    padding: 2.5rem 3.5rem;
+    background-color: #eee;
+    color: #777;
+    font-weight: 600;
+    border: none;
+    font-size: 1.6rem;
+    text-align: left;
+    transition: all .2s;
+    border-radius: .3rem;
+    position: relative;
+
+    &-icon {
+      font-size: 2rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 2.5rem;
+    }
+  }
+
+  &__content {
+    background-color: $color-white;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .2s;
+
+    &-text {
+      padding: 2rem 3.5rem;
+    }
+  }
+}

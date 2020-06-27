@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.7;
+}
+
+html {
+  font-size: 62.5%;
+
+  // Transition Class
+  &.transition,
+  &.transition *,
+  &.transition *:before,
+  &.transition *:after {
+    transition: all .5s !important;
+    transition-delay: 0 !important;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: bold;
+  padding: 15px 45px;
+  border-radius: 3px;
+}
+
+a {
+  color: $color-text;
+}
+
+.main-container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.fa-icon {
+  display: inline-block;
+}
+
+input[type="submit"] {
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+input, textarea, select {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  font-family: inherit;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+span {
+  white-space: nowrap;
+}
+
+// Utility classes
+
+.shadow-xxs {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.shadow-xs {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.shadow-s {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.shadow-m {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+// Alt Shadows
+
+.shadow-deep-s {
+  box-shadow: 0px 25px 47px rgba(0, 0, 0, 0.075);
+}
+
+.shadow-deep-m {
+  box-shadow: 20px 47px 107px rgba(0, 0, 0, 0.098);
+}
+
+// Margins and Paddings
+
+.mb-xxxs {
+  margin-bottom: .5rem;
+}
+
+.mb-xxs {
+  margin-bottom: 1rem;
+}
+
+.mb-xs {
+  margin-bottom: 1.5rem;
+}
+
+.mb-s {
+  margin-bottom: 2.5rem;
+}
+
+.mb-m {
+  margin-bottom: 3.5rem;
+}
+
+.mb-l {
+  margin-bottom: 5rem;
+}

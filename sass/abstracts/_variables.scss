@@ -1,0 +1,94 @@
+// Main colors
+$color-primary: #E91E63;
+$color-secondary: #9C27B0;
+$color-terciary: #3F51B5;
+$color-text: #333;
+$color-dark: #222;
+$color-white: #fff;
+$color-black: #111;
+
+$color-accent-blue: #536dfe;
+$color-accent-green: #64DD17;
+$color-accent-red: #FF1744;
+$color-accent-teal: #1DE9B6;
+$color-accent-amber: #FFC400;
+
+
+
+$color-grey-light: #f5f5f5;
+$color-grey-dark: #bbb;
+
+$dashboard-bg: #fff;
+
+$menu-dark-primary: #060818;
+$menu-dark-text: #506690;
+
+
+// THEME GRADIENT OPTIONS
+
+// Gradient 1
+$color-alt-1-primary: #e91e63;
+$color-alt-1-secondary: #9c27b0;
+
+// Gradient 2
+$color-alt-2-primary: #fa709a;
+$color-alt-2-secondary: #fee140;
+
+// Gradient 3
+$color-alt-3-primary: #667eea;
+$color-alt-3-secondary: #764ba2;
+
+// Gradient 4
+$color-alt-4-primary: #37ecba;
+$color-alt-4-secondary: #72afd3;
+
+// Gradient 5
+$color-alt-5-primary: #48c6ef;
+$color-alt-5-secondary: #6f86d6;
+
+// Gradient 6
+$color-alt-6-primary: #c471f5;
+$color-alt-6-secondary: #fa71cd;
+
+
+
+// Darker and lighter colors
+$color-primary-lg: lighten($color-primary, 5%);
+$color-secondary-lg: lighten($color-secondary, 5%);
+
+$color-primary-dk: darken($color-primary, 5%);
+$color-secondary-dk: darken($color-secondary, 5%);
+
+// CUSTOM CSS VARIABLES
+
+// Sidebar
+:root {
+  //Sidebar
+  --sidebar-bg: #fff;
+  --sidebar-heading: #999;
+  --sidebar-subheading: #999;
+  --sidebar-list-item: #333;
+  --sidebar-list-item-alt: #f5f5f5;
+  --sidebar-list-item-bg: #fff;
+  --sidebar-list-item-border: #bbb;
+  --sidebar-border: #f5f5f5;
+
+  //Dashboard
+  --dashboard-bg: #fff;
+}
+
+// Dark Theme
+html[data-theme="dark"] {
+  //Sidebar
+  --sidebar-bg: #222;
+  --sidebar-heading: #bbb;
+  --sidebar-subheading: #bbb;
+  --sidebar-list-item: #999;
+  --sidebar-list-item-alt: #333;
+  --sidebar-list-item-bg: #222;
+  --sidebar-list-item-border: #aaa;
+  --sidebar-border: #333;
+
+  //Dashboard
+  --dashboard-bg: #333;
+}

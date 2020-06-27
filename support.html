@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <!-- Main Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Google Icon Font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5d3123e5e3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <!-- <script src="dist/main.js"></script> -->
+  <title>Support Centre</title>
+</head>
+<body>
+
+  <div class="main-grid">
+    <aside class="sidebar">
+      <div class="sidebar__top">
+        <div class="sidebar__top-wrapper">
+          <a href="#" class="sidebar__top-heading"><i class="fas fa-mountain sidebar__top-icon fa-icon"></i>Dashboard
+            App</a>
+        </div>
+        <ul class="sidebar__list">
+          <h6 class="sidebar__list-heading">Applications</h6>
+          <li class="sidebar__list-item sidebar__list-item--active">
+            <a href="index.html"><i class="fas fa-desktop fa-icon"></i>Overview
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="#"><i class="fas fa-paper-plane fa-icon"></i>Messenger
+            </a>
+            <span class="sidebar__list-item__badge">New</span>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="calendar.html"><i class="far fa-calendar"></i>Calendar
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar__middle">
+        <ul class="sidebar__list">
+          <h6 class="sidebar__list-heading">Pages</h6>
+          <li class="sidebar__list-item">
+            <a href="knowledge.html"><i class="fas fa-lightbulb fa-icon"></i>Knowledge Hub
+            </a>
+          </li>
+          <li class="sidebar__list-item">
+            <a href="support.html"><i class="fas fa-headset fa-icon"></i>Support
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar__bottom">
+        <h6 class="sidebar__bottom-heading">Settings</h6>
+        <span class="sidebar__bottom-subheading">Theme Color</span>
+        <ul class="sidebar__bottom-gradientList">
+          <li class="sidebar__bottom-gradientList__item sidebar__bottom-gradientList__item--1" data-color-1="#e91e63"
+            data-color-2="#9c27b0"></li>
+          <li class="sidebar__bottom-gradientList__item sidebar__bottom-gradientList__item--2" data-color-1="#fa709a"
+            data-color-2="#fee140"></li>
+          <li class="sidebar__bottom-gradientList__item sidebar__bottom-gradientList__item--3" data-color-1="#667eea"
+            data-color-2="#764ba2"></li>
+          <li class="sidebar__bottom-gradientList__item sidebar__bottom-gradientList__item--4" data-color-1="#37ecba"
+            data-color-2="#72afd3"></li>
+          <li class="sidebar__bottom-gradientList__item sidebar__bottom-gradientList__item--5" data-color-1="#48c6ef"
+            data-color-2="#6f86d6"></li>
+          <li class="sidebar__bottom-gradientList__item sidebar__bottom-gradientList__item--6" data-color-1="#c471f5"
+            data-color-2="#fa71cd"></li>
+        </ul>
+        <span class="sidebar__bottom-subheading">Dark Mode</span>
+        <div class="sidebar__bottom-inputWrapper">
+          <input type="checkbox" class="sidebar__bottom-input">
+        </div>
+        <ul class="sidebar__list">
+          <li class="sidebar__list-item sidebar__list-item--pro">
+            <a href="#" class="shadow-xs"><i class="fas fa-rocket fa-icon"></i>Upgrade to PRO
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <div class="dashboard dashboard--support">
+      <div class="header">
+        <nav class="navbar">
+          <div class="navbar__wrapper">
+            <div class="navbar__search">
+              <input type="text" id="search-input" class="navbar__search-input" placeholder="Search here">
+              <label for="search-input" class="navbar__search-label"><i class="material-icons">search</i></label>
+            </div>
+            <ul class="navbar__list">
+              <li class="navbar__list-item"><a href="#"><i
+                    class="far fa-question-circle navbar__list-item__icon"></i></a></li>
+              <li class="navbar__list-item"><a href="#"><i
+                    class="far fa-bell navbar__list-item__icon navbar__list-item__icon-bell"><span>3</span></i></a></li>
+              <li class="navbar__list-item navbar__list-item--relative"><a href="#" id="profile-btn"><img
+                    src="img/90.jpg" alt="" class="navbar__list-item__img shadow-xs"><span
+                    class="navbar__list-item__img-status"></span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="support-hero main-container">
+          <h1 class="support-hero__heading">Need Technical Help?</h1>
+          <p class="support-hero__subheading">Fill out the form below and we'll reply within 24 hours.</p>
+        </div>
+        <div class="support-form-section main-container">
+          <div class="support-form-card shadow-deep-m">
+            <div class="support-form-card__left">
+              <h4 class="support-form-card__left-heading">Create a Ticket</h4>
+              <form action="" class="support-form">
+                <button href="#" class="support-form__btn shadow-xs"><i
+                    class="fas fa-share support-form__btn-icon"></i></button>
+                <div class="support-form__row">
+                  <div class="support-form__column">
+                    <label for="">Name</label>
+                    <input type="text">
+                  </div>
+                  <div class="support-form__column">
+                    <label for="">Email Address</label>
+                    <input type="email">
+                  </div>
+                </div>
+                <div class="support-form__row">
+                  <div class="support-form__column">
+                    <label for="">Phone Number</label>
+                    <input type="tel">
+                  </div>
+                  <div class="support-form__column">
+                    <label for="">Type of Issue</label>
+                    <select name="category" id="">
+                      <option value="general">General issue</option>
+                      <option value="import-data">Importing data</option>
+                      <option value="credentials">Account credentials</option>
+                      <option value="compatibility">Browser Issue</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="support-form__row">
+                  <div class="support-form__column support-form__column--full">
+                    <label for="">Your Message</label>
+                    <textarea name="" id="" rows="5"></textarea>
+                  </div>
+                </div>
+           
+          
+             
+            
+                
+              </form>
+            </div>
+            <div class="support-form-card__right">
+              <h4 class="support-form-card__right-heading">Contact Information</h4>
+              <ul class="support-form-card__right-list">
+                <li class="support-form-card__right-list__item">
+                  <div class="support-form-card__right-list__item-left">
+                    <i
+                      class="fas fa-map-marker-alt support-form-card__right-list__item-left__icon
+                      support-form-card__right-list__item-left__icon--1">
+                    </i>
+                  </div>
+                  <div class="support-form-card__right-list__item-right">
+                    <span class="support-form-card__right-list__item-right__text">8637 Satterfield
+                      Corner, San Francisco, US</span>
+                  </div>
+                </li>
+                <li class="support-form-card__right-list__item">
+                  <div class="support-form-card__right-list__item-left">
+                    <i
+                      class="fas fa-mobile-alt support-form-card__right-list__item-left__icon support-form-card__right-list__item-left__icon--2">
+                    </i>
+                  </div>
+                  <div class="support-form-card__right-list__item-right">
+                    <span class="support-form-card__right-list__item-right__text">1-871-188-5533</span>
+                  </div>
+                </li>
+                <li class="support-form-card__right-list__item">
+                  <div class="support-form-card__right-list__item-left">
+                    <i class="fas fa-envelope support-form-card__right-list__item-left__icon">
+                    </i>
+                  </div>
+                  <div class="support-form-card__right-list__item-right">
+                    <span class="support-form-card__right-list__item-right__text">support@materialadmin.com</span>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+          
+          
+          
+        </div>
+      </div>
+      <footer class="footer">
+        <h5 class="footer__heading footer__heading-1">© 2020 My Fictional App - All rights reserved</h5>
+        <h5 class="footer__heading footer__heading-2">Made with <i class="footer__icon fas fa-heart"></i> by Ruben
+          Garcia</h5>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Profile Modal -->
+  <div class="modal-bg">
+    <div class="modal">
+
+      <div class="modal__grid">
+        <div class="modal__grid-left">
+          <div class="modal__grid-left__top">
+            <img class="modal__grid-left__top-img shadow-xs mb-xxxs" src="img/90.jpg" alt="">
+            <span class="modal__grid-left__top-welcome">Welcome back, Elena</span>
+          </div>
+          <div class="modal__grid-left__bottom">
+            <ul class="modal__grid-left__bottom-list">
+              <li class="modal__grid-left__bottom-list__item modal__grid-left__bottom-list__item--active"><a href="#"><i
+                    class="fas fa-user"></i>My Account</a></li>
+              <li class="modal__grid-left__bottom-list__item"><a href="#"><i class="fas fa-cog"></i>Notifications</a>
+              </li>
+              <li class="modal__grid-left__bottom-list__item"><a href="#"><i class="fas fa-money-check"></i>Plans &
+                  Billing</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal__grid-main">
+          <h5 class="modal__heading mb-xxxs">Name</h5>
+          <input type="text" class="modal__input mb-xs" value="Elena">
+
+          <h5 class="modal__heading mb-xxxs">Email Address</h5>
+          <input type="email" class="modal__input mb-xs" value="elena.yang476@gmail.com">
+          <div class="modal__separator mb-s"></div>
+
+          <h5 class="modal__heading mb-xxs">Profile Picture</h5>
+          <img src="img/90.jpg" alt="" class="modal__profile-pic mb-xxxs">
+          <span class="modal__tip mb-xxs">Upload an image of your choice. It will show up in the top menu and in
+            notifications.</span>
+          <button type="button" class="modal__btn mb-xs shadow-xxs">Update</button>
+          <div class="modal__separator mb-s"></div>
+
+          <h5 class="modal__heading mb-xxs">Password</h5>
+          <button type="button" class="modal__btn modal__btn--simple shadow-xxs mb-xs">Set New Password</button>
+          <span class="modal__tip mb-xxs">Change your existing password.</span>
+          <div class="modal__separator mb-s"></div>
+
+          <h5 class="modal__heading mb-xxs">Alias</h5>
+          <input type="text" class="modal__input mb-xs" value="#elenaY457">
+          <span class="modal__tip mb-xxs">This is the account name that your contacts will see.</span>
+          <div class="modal__separator mb-s"></div>
+
+          <h5 class="modal__heading mb-xxs">Danger Zone</h5>
+          <button type="button" class="modal__btn modal__btn--danger shadow-xxs mb-xs">Delete Account</button>
+          <span class="modal__tip mb-xxs">This will remove your account permanantely including all your stored
+            data.</span>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Floating Btn -->
+  <div class="floating">
+    <div class="floating__card shadow-s">
+      <a href="" class="floating__card__close"><i class="fas fa-times"></i></a>
+
+      <img src="img/helper.jpg" class="floating__card-img shadow-xs">
+      <p class="floating__card-text">Need help?<br><span class="floating__card-span">Drop us a line and we'll reply
+          asap</span></p>
+      <form action="" class="floating__card-form">
+        <div class="">
+          <input class="floating__card-form__input" type="text" name="name" placeholder="Your name">
+          <textarea class="floating__card-form__textarea" name="message" id="" rows="3"
+            placeholder="Your message"></textarea>
+        </div>
+        <input class="floating__card-form__submit" type="submit" name="help-submit" value="Send Message">
+      </form>
+    </div>
+    <a href="#" class="floating__btn shadow-s"><i class="fas fa-paper-plane floating__btn-icon"></i></a>
+  </div>
+
+  <!-- Chart JS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

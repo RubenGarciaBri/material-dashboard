@@ -1,0 +1,134 @@
+.dashboard {
+  background-color: var(--dashboard-bg);
+  grid-column-start: 2;
+
+  .header {
+    padding-bottom: 15rem;
+    background: linear-gradient(to right, $color-alt-1-primary, $color-alt-1-secondary);
+  }
+
+  .navbar {
+    padding: 0 2.5rem;
+    background: linear-gradient(to right, $color-alt-1-primary, $color-alt-1-secondary);
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+    }
+
+    &__search {
+      position: relative;
+
+      &-input {
+        background-color: rgba(255, 255, 255, 0.2);
+        border: none;
+        padding: 1.2rem 1rem 1.2rem 6.5rem;
+        width: 50rem;
+        border-radius: 25rem;
+        outline: none;
+        margin: 0;
+        height: auto;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+
+        &:focus {
+          border: 0;
+          box-shadow: none;
+          background-color: #fff;
+          box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.12);
+
+          &::placeholder {
+            color: $color-text;
+          }
+        }
+
+        &::placeholder {
+          color: #fff;
+        }
+      }
+
+      &-label {
+        position: absolute;
+        top: .8rem;
+        left: 2.5rem;
+
+        & i {
+          color: #fff;
+        }
+      }
+    }
+
+    &__list {
+      display: flex;
+      padding: 1.5rem 0;
+
+      &-item {
+
+        &:not(:last-child) a {
+          margin-right: 2.2rem;
+        }
+
+        & a {
+          display: inline-block;
+          padding: .5rem .5rem;
+          color: $color-white;
+
+        }
+
+        &__img {
+          width: 30px;
+          border-radius: 50%;
+          display: inline;
+
+          &-status {
+            position: absolute;
+            bottom: 15px;
+            right: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid $color-white;
+            background-color: #6adb84;
+            display: inline-block;
+          }
+        }
+
+        &__icon {
+          font-size: 2rem;
+
+          &-bell {
+            position: relative;
+
+            span {
+              position: absolute;
+              display: inline-block;
+              top: -1.3rem;
+              right: -1rem;
+              color: $color-white;
+              background-color: $color-primary;
+              border-radius: 50%;
+              padding: .3rem;
+              font-size: 1.4rem;
+            }
+          }
+        }
+
+        &--relative a {
+          position: relative;
+        }
+      }
+    }
+  }
+
+  .dashboard-grid {
+    position: relative;
+    top: -150px;
+    display: grid;
+    padding: 2.5rem;
+    gap: 2.5rem;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}

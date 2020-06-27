@@ -1,0 +1,365 @@
+.dashboard--inbox {
+  background: #f5f5f5;
+
+  .header {
+    padding-bottom: 25rem;
+  }
+
+  .inbox-hero {
+    text-align: center;
+
+    &__heading {
+      margin-top: 5rem;
+      color: $color-white;
+    }
+
+    &__subheading {
+      color: rgba(255, 255, 255, .7);
+      font-size: 1.8rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+.inbox-section {
+  position: relative;
+  top: -25rem;
+
+  .inbox {
+    //Variables 
+    --border-radius: 5px;
+    --module-padding: 3.5rem;
+    --module-gap-y: 2.5rem;
+    --module-gap-x: 3.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+
+    &__left {
+      width: 25%;
+      margin-right: var(--module-gap-x);
+
+      &-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: var(--module-padding);
+        border-radius: var(--border-radius);
+        margin-bottom: var(--module-gap-y);
+        background: #fff;
+        color: #333;
+
+        img {
+          width: 7rem;
+          border-radius: 50%;
+        }
+
+        &__name {
+          font-size: 1.6rem;
+          margin: 1.5rem 0 .5rem 0;
+          font-weight: 500;
+        }
+
+        &__email {
+          font-size: 1.4rem;
+          font-weight: 300;
+        }
+
+      }
+
+      &-middle {
+        padding: var(--module-padding);
+        border-radius: var(--border-radius);
+        margin-bottom: var(--module-gap-y);
+        background: #fff;
+
+        &__heading {
+          font-size: 1.8rem;
+          font-weight: 500;
+        }
+
+        &__list {
+          margin-top: 1.5rem;
+
+          &-item {
+
+            & a {
+              display: block;
+              padding: .8rem 0;
+              font-size: 1.6rem;
+
+              & i {
+                margin-right: 1.5rem;
+                font-size: 2rem;
+              }
+            }
+          }
+        }
+      }
+
+      &-bottom {
+        padding: var(--module-padding);
+        border-radius: var(--border-radius);
+        background: #fff;
+
+        &__heading {
+          @extend .inbox__left-middle__heading;
+        }
+
+        &__list {
+          @extend .inbox__left-middle__list;
+
+          &-item {
+            display: flex;
+            align-items: center;
+
+            .tag-circle {
+              display: inline-block;
+              width: 12px;
+              height: 12px;
+              border-radius: 50%;
+              margin-right: 1.5rem;
+
+              &--1 {
+                background-color: #00E676;
+              }
+
+              &--2 {
+                background-color: #F50057;
+              }
+
+              &--3 {
+                background-color: #651FFF;
+              }
+            }
+
+            & a {
+              display: block;
+              padding: .3rem 0;
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+
+    &__right {
+      width: 75%;
+
+      &-input {
+        width: 100%;
+        border-radius: var(--border-radius);
+        padding: 1.5rem 2.5rem;
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin-bottom: var(--module-gap-y);
+
+        &::placeholder {
+          color: $color-grey-dark;
+        }
+
+      }
+
+      &-app {
+        background-color: #fff;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+
+        &__top {
+          padding: 2rem var(--module-padding) 2rem var(--module-padding);
+          border-bottom: solid 1px #ddd;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          &-settings {
+            font-size: 2rem;
+            background: $color-accent-blue;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 5.6rem;
+            height: 5.6rem;
+            border-radius: 50%;
+
+            &:hover {
+              background-color: darken($color-accent-blue, 5%);
+            }
+
+            & i {
+              position: relative;
+              top: 1px;
+              left: 1px;
+            }
+          }
+
+          &-compose {
+            padding: 1.5rem 2.7rem;
+            background-color: $color-primary;
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: 600;
+            border-radius: 25rem;
+            @include transition-default;
+
+            &:hover {
+              background-color: darken($color-primary, 5%);
+            }
+
+            i {
+              margin-right: .7rem;
+            }
+          }
+        }
+
+        &__body {
+
+          // Main email component
+          &-email {
+            border-bottom: solid 1px #ddd;
+            padding: 0 0 0 var(--module-padding);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            // Left column with icons
+            &__left {
+              text-align: center;
+              margin-right: 2rem;
+
+              &-list {
+
+                &__item {
+                  padding: .2rem 0;
+
+                  a {
+                    color: #999;
+                    font-size: 1.6rem;
+                  }
+                }
+              }
+            }
+
+            // Center column with main email content
+            &__body {
+              padding: 1.2rem 3.5rem 0rem 1.5rem;
+              cursor: pointer;
+
+              &-top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &__left {
+                  display: flex;
+                  align-items: center;
+
+                  img {
+                    width: 4rem;
+                    border-radius: 50%;
+                    margin-right: 1.5rem;
+                  }
+
+                  &-heading {
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                  }
+                }
+
+                &__right {
+                  font-size: 1.2rem;
+
+                  &-attachment {
+                    color: #999;
+                    display: inline-block;
+                    font-size: 1.6rem;
+                    margin-right: .7rem;
+                    position: relative;
+                    top: 2px;
+                  }
+
+                  &-tag {
+                    display: inline-block;
+                    color: #fff;
+                    border-radius: 3px;
+                    padding: 0rem 1rem;
+
+                    &--1 {
+                      background-color: #00E676;
+                    }
+
+                    &--2 {
+                      background-color: #F50057;
+                    }
+
+                    &--3 {
+                      background-color: #651FFF;
+                    }
+                  }
+                }
+              }
+
+              &-bottom {
+
+                &__message {
+                  font-size: 1.3rem;
+                  font-weight: 300;
+                  color: #999;
+                }
+              }
+            }
+
+            // Right column with time tag
+            &__right {
+              align-self: flex-start;
+              padding: 2.4rem 1.5rem 0 0;
+              color: #999;
+              font-size: 1.2rem;
+
+              &-time {
+                display: inline-block;
+              }
+            }
+
+            // Unopened Email Alt Styles
+            &--new {
+
+              .inbox__right-app__body-email__body {
+
+                &-top {
+
+                  &__left {
+
+                    &-heading {
+                      font-weight: 700;
+                    }
+                  }
+                }
+
+                &-bottom {
+
+                  &__message {
+                    font-weight: 700;
+                    color: #333;
+                  }
+                }
+              }
+
+              .inbox__right-app__body-email__right {
+
+                &-time {
+                  font-weight: 700;
+                  color: #333;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

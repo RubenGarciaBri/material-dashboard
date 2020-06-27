@@ -1,0 +1,164 @@
+.dashboard--knowledge {
+
+  .header {
+    padding-bottom: 47rem;
+  }
+
+  .support-container {
+    position: relative;
+    top: -42rem;
+    padding: 0 1.5rem;
+  }
+
+  .support-hero {
+    text-align: center;
+    color: $color-white;
+
+
+    &__heading {
+      color: $color-white;
+    }
+
+    &__subheading {
+      color: rgba(255, 255, 255, .7);
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__searchBox {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: stretch;
+
+      &-input {
+        padding: 1.5rem 2.5rem;
+        width: 50%;
+        font-size: 1.8rem;
+        border: none;
+        border-top-left-radius: .3rem;
+        border-bottom-left-radius: .3rem;
+        font-weight: 300;
+
+
+        &::placeholder {
+          color: $color-grey-dark;
+        }
+      }
+
+      &-btn {
+        background-color: $color-black;
+        color: $color-white;
+        border: none;
+        padding: 0 3.5rem;
+        font-size: 1.6rem;
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+        outline: none;
+        font-weight: 600;
+        cursor: pointer;
+        @include transition-default;
+
+        &:hover {
+          background-color: $color-accent-blue;
+        }
+      }
+    }
+
+
+  }
+
+  .support-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 12rem;
+
+
+    .cardSupport {
+      background-color: $color-white;
+      padding: 6rem 4.5rem;
+      border-radius: .3rem;
+      text-align: center;
+      transition: all .3s;
+
+      &--1 {
+        border-top: solid 6px $color-accent-teal;
+      }
+
+      &--2 {
+        border-top: solid 6px $color-accent-amber;
+      }
+
+      &--3 {
+        border-top: solid 6px $color-accent-red;
+      }
+
+      &:hover {
+        transform: translateY(-1.3rem);
+      }
+
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+
+      &__icon {
+        display: inline-block;
+        font-size: 5rem;
+        margin-bottom: 3rem;
+
+        &--1 {
+          color: $color-accent-teal;
+        }
+
+        &--2 {
+          color: $color-accent-amber;
+        }
+
+        &--3 {
+          color: $color-accent-red;
+        }
+
+      }
+
+      &___heading {}
+
+      &__text {
+        border-bottom: solid 2px $color-grey-light;
+        padding-bottom: 1.8rem;
+        margin-bottom: 3.1rem;
+      }
+
+      &__link {
+        color: $color-white;
+        padding: 1.2rem 3.1rem;
+        border-radius: .3rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+
+
+        &--1 {
+          background-color: $color-accent-teal;
+        }
+
+        &--2 {
+          background-color: $color-accent-amber;
+        }
+
+        &--3 {
+          background-color: $color-accent-red;
+        }
+      }
+    }
+  }
+
+  .support-faq {
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 7rem;
+
+    &__heading {
+      margin-bottom: 3.5rem;
+    }
+  }
+}

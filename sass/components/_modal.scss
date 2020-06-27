@@ -1,0 +1,179 @@
+.modal-bg {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .7);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity .3s;
+
+
+  &--active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .modal {
+    max-width: 90rem;
+    height: 80%;
+    background: $color-white;
+    border-radius: .5rem;
+    // border-top: solid .7rem $color-accent-blue;
+    position: relative;
+    overflow-y: scroll;
+    visibility: hidden;
+
+    &--active {
+      visibility: visible;
+
+    }
+
+    // Common Styles
+
+    &__heading {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    &__separator {
+      border-top: 2px solid $color-grey-light;
+      width: 100%;
+      margin-top: .5rem;
+    }
+
+    &__input {
+      padding: .7rem 1.2rem;
+      font-size: 1.6rem;
+      border: 1px solid $color-grey-dark;
+      border-radius: .3rem;
+      width: 100%;
+      color: $color-grey-dark;
+    }
+
+    &__tip {
+      display: inline-block;
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: $color-grey-dark;
+      line-height: 1.2;
+    }
+
+    &__profile-pic {
+      width: 11rem;
+      display: inline-block;
+      border-radius: 50%;
+    }
+
+    &__btn {
+      padding: 1rem 3.2rem;
+      cursor: pointer;
+      border: 0;
+      display: block;
+      border-radius: .3rem;
+      color: $color-white;
+      background: $color-accent-blue;
+      font-weight: 600;
+      border: 2px solid $color-accent-blue;
+      @include transition-default;
+
+      &:hover {
+        background: darken($color-accent-blue, 5%);
+        border: 2px solid darken($color-accent-blue, 5%);
+      }
+
+      &--danger {
+        background: #d9534f;
+        border: 2px solid #d9534f;
+        color: $color-white;
+
+        &:hover {
+          background: darken(#d9534f, 5%);
+          border: 2px solid darken(#d9534f, 5%);
+        }
+      }
+
+      &--simple {
+        background: $color-white;
+        border: 2px solid $color-white;
+        color: #777;
+
+        &:hover {
+          background: #777;
+          border: 2px solid #777;
+          color: $color-white;
+        }
+      }
+    }
+
+    // Grid
+
+    &__grid {
+      display: grid;
+      grid-template-columns: 2fr 4fr;
+      grid-template-rows: 1fr;
+
+      &-left {
+        background: $color-grey-light;
+
+        &__top {
+          padding: 5rem 3.5rem 2.5rem 3.5rem;
+          text-align: center;
+
+          &-img {
+            width: 7.5rem;
+            border-radius: 50%;
+          }
+
+          &-welcome {
+            font-size: 1.6rem;
+            display: inline-block;
+          }
+        }
+
+        &__bottom {
+          padding-bottom: 10rem;
+
+          &-list {
+
+            &__item {
+
+              & a i {
+                margin-right: 1.5rem;
+              }
+
+              & a {
+                font-size: 1.4rem;
+                font-weight: 500;
+                padding: 1.5rem 1.5rem;
+                display: inline-block;
+                width: 100%;
+                @include transition-default;
+
+                &:hover {
+                  background: $color-grey-dark;
+                }
+              }
+
+              &--active a {
+                background: $color-grey-dark;
+
+              }
+            }
+          }
+        }
+      }
+
+      &-main {
+        padding: 3.5rem 5rem;
+        background: $color-white;
+        position: relative;
+
+      }
+    }
+  }
+}
